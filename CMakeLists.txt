@@ -5,3 +5,6 @@ cmake_minimum_required (VERSION 2.8.11)
 project (CPP_LANG_PRACTICE)
 
 add_subdirectory(language_features)
+target_include_directory(language_features)
+
+add_executable(main main.cpp ${LANGUAGE_FEATURES_SOURCES})
